@@ -1,0 +1,64 @@
+body{
+font-family: "Roboto", sans-serif;
+font-size: 43px;
+margin: 0;
+color: #000000;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.header{
+  background-color: white;
+  height: 107px;
+}
+
+.header-inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 107px;
+}
+
+.nav{
+  vertical-align: middle;
+  display: inline;
+  font-size: 27.05px;
+  font-weight: 300;
+}
+
+.nav-item{
+  vertical-align: middle;
+  text-decoration: none;
+  color: #000000;
+  margin: auto 42.5px;
+}
+.nav-item-number{
+  vertical-align: middle;
+  text-decoration: none;
+  color: #000000;
+}
+.nav-phone{
+  vertical-align: middle;
+}
+
+.container {
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+
+
+.intro{
+  width: 100%;
+  height: 100vh;
+  background: url(../images/Intro.png) center no-repeat;
+}
