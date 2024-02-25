@@ -15,21 +15,29 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+.container {
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+/* HEADER */
 .header{
   background-color: white;
   height: 107px;
+
 }
 
 .header-inner{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 107px;
 }
+
 
 .nav{
   vertical-align: middle;
-  display: inline;
+  display: inline-block;
   font-size: 27.05px;
   font-weight: 300;
 }
@@ -39,7 +47,12 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   color: #000000;
   margin: auto 42.5px;
+  transition: color .2s linear;
 }
+.nav-item:hover{
+  color: #B454B2;
+}
+
 .nav-item-number{
   vertical-align: middle;
   text-decoration: none;
@@ -49,16 +62,95 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: middle;
 }
 
-.container {
+
+
+
+/* INTRO */
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
   width: 100%;
-  max-width: 1680px;
-  margin: 0 auto;
+  height: 75vh;
+  background: url(../images/Intro.png) center no-repeat;
+}
+
+.intro-inner{
+  margin-top: 165px;
+  width: 100%;
+  max-width: 776px;
+}
+
+.intro__title {
+  font-size: 94px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1;
+  color: white;
+  width: 776px;
+}
+
+.intro__subtitle{
+  font-size: 43px;
+  font-weight: 300;
+  width: 455px;
+  line-height: 1;
+  color: white;
+  margin: 39px 0;
+}
+
+.intro__join{
+  font-size: 25px;
+  font-weight: 300;
+  width: 337px;
+  color: white;
+}
+
+.intro-social{
+  margin-top: 19px;
+}
+
+.intro-icon{
+  margin: 0 30px;
+}
+
+.intro-icon:first-child{
+  margin-left: 0px;
 }
 
 
 
-.intro{
+/* Section */
+
+.section{
   width: 100%;
-  height: 100vh;
-  background: url(../images/Intro.png) center no-repeat;
+  height: 1323px;
+  background-image: url(../images/Paper.png);
+}
+
+.section-decor{
+  width: 100%;
+  height: 1323px;
+  position: relative;
+}
+
+.Purple_brush, .blackberry{
+  position: absolute;
+  right: 0;
+  top: 0 ;
+}
+
+.blackberry{
+  z-index: 10;
+}
+
+.first_title{
+  color: #FF97FD;
+  font-size: 94px;
+  font-weight: 700;
+  line-height: 1;
+  width: 741px;
+  padding-top: 36px ;
+  text-align: right;
+  margin: 0 676px;
 }
